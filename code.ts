@@ -1,4 +1,7 @@
-
+/** 
+* recursively walk through the selected node tree. and extract all the
+* TEXT or SHAPE_WITH_TEXT nodes that actually contain data
+*/
 function findTextNodes(nodes: readonly SceneNode[]): (TextNode | ShapeWithTextNode)[] {
   let textNodes: (TextNode | ShapeWithTextNode)[] = [];
 
@@ -15,6 +18,10 @@ function findTextNodes(nodes: readonly SceneNode[]): (TextNode | ShapeWithTextNo
   return textNodes;
 }
 
+/**
+* take the current selection, and update it to only contain
+* the text nodes contained in that selection
+*/
 function selectTextNodes() {
   const selection = figma.currentPage.selection;
   if (selection.length === 0) return figma.notify("No nodes selected.");
