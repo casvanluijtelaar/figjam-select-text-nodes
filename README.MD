@@ -1,4 +1,4 @@
-![A video showing the "select text nodes" plugin](dfb)
+![A video showing the "select text nodes" plugin](https://github.com/casvanluijtelaar/figjam-select-text-nodes/blob/main/assets/demo.gif?raw=true)
 
 # Select text nodes
 
